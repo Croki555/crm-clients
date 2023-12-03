@@ -1,0 +1,195 @@
+.btn {
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 11px 25px;
+  
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  border: 1px solid var(--firm, #9873FF);
+  color: var(--firm, #9873FF);
+}
+
+.btn-secondary:hover {
+  background: #B89EFF;
+  color: var(--white, #FFF);
+}
+
+.btn-secondary:focus {
+  border-color: var(--firm, #9873FF);
+  background: #8052FF;
+  color: var(--white, #FFF);
+}
+
+.btn-secondary:disabled {
+  border: 1px solid var(--grey, #C8C5D1);
+  background-color: transparent;
+  color: var(--grey, #C8C5D1);
+}
+
+/* Primary Button */
+
+.btn-primary {
+  background: var(--firm, #9873FF);
+  color: var(--white, #FFF);
+}
+
+.btn-primary:hover {
+  background: #B89EFF;
+  color: var(--white, #FFF);
+}
+
+.btn-primary:focus {
+  background: #8052FF;
+  color: var(--white, #FFF);
+}
+
+.btn-primary:disabled {
+  background: var(--grey, #C8C5D1);
+  color: var(--white, #FFF);
+}
+
+
+/* Edit Button */
+
+.button-action {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: var(--black, #333);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.button-action__icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transform-origin: center center;
+}
+
+.button-action.edit .button-action__icon {
+  background-image: url("../../img/icons/edit.svg");
+}
+
+.button-action.delete .button-action__icon {
+  background-image: url("../../img/icons/cancel-red.svg");
+}
+
+.button-action.edit:hover {
+  color: var(--firm, #9873FF);
+}
+
+.button-action.delete:hover {
+  color: var(--red, #F06A4D);
+}
+
+.button-action.edit:focus .button-action__icon {
+  background-image: url("../../img/icons/load-purple.svg");
+  animation: 1s infinite linear rotate;
+}
+
+.button-action.delete:focus .button-action__icon {
+  background-image: url("../../img/icons/load-red.svg");
+  animation: 1s infinite linear rotate;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Add Button */
+
+.add-button {
+  cursor: pointer;
+  border: 1px solid var(--firm, #9873FF);
+  padding: 12px 26px;
+  color: var(--firm, #9873FF);
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.add-button:hover {
+  border-color: transparent;
+  background: var(--black);
+}
+
+.add-button__icon {
+  display: inline-block;
+  width: 22px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../img/icons/add-client.svg");
+  background-size: contain;
+}
+
+/* Close Button */
+.btn-close-modal {
+  cursor: pointer;
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../../img//icons/close.svg");
+}
+
+/* Add Client Button */
+.add-client {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--black, #333);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.add-client::before {
+  content: '+';
+  font-size: 16px;
+  display: inline-flex;
+  border: 2px solid var(--firm);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.add-client:hover {
+  color: var(--firm, #9873FF);
+}
+
+.add-client:hover.add-client::before {
+  color: var(--white);
+  background: var(--firm, #9873FF);
+}
+
+.add-client:disabled {
+  pointer-events: none;
+  color: #808080;
+}
+
+.add-client:disabled.add-client::before {
+  color: #808080;
+  border-color: #808080;
+}

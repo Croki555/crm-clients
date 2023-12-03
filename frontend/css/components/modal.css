@@ -1,0 +1,149 @@
+.modal {
+  position: relative;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  width: 450px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  background: #FFF;
+}
+
+.modal-hidden {
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.modal-show {
+  transition: opacity 0.3s;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  visibility: visible;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  background:rgba(0, 0, 0, 0.5);
+  padding: 30px 0;
+}
+
+.modal__form {
+  width: 100%;
+}
+
+.modal-show .modal {
+  z-index: 100;
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__title {
+  margin-bottom: 32px;
+  color: var(--black, #333);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal__container {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  max-width: 390px;
+  padding: 0 30px;
+}
+
+.modal__add-contact {
+  padding: 8px 0;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 100%;
+  background: var(--grey, #C8C5D1);
+}
+
+.modal__group {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.modal__container .input-group:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 20;
+}
+
+.modal__group .btn-close-modal {
+  position: unset;
+  width: unset;
+  height: unset;
+  flex-shrink: 0;
+  background-image: unset;
+  color: var(--black, #333);
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+.modal__contacts {
+  display: inline-flex;
+  align-items: center;
+}
+
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.modal__contacts-input {
+  border-top: 1px solid var(--grey, #C8C5D1);
+  border-bottom: 1px solid var(--grey, #C8C5D1);
+  padding: 8px 12px;
+  height: 100%;
+  text-align: start;
+  color: var(--black, #333);
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--white);
+}
+
+.modal__contacts-btn {
+  cursor: pointer;
+  border: 1px solid var(--grey, #C8C5D1);
+  background: #E7E5EB;
+  display: inline-block;
+  width: 27px;
+  height: 37px;
+  background-image: url("../../img/icons/cancel.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &:hover {
+    border-color: var(--red, #F06A4D);
+    background-image: url("../../img/icons/cancel-red.svg");
+  }
+}
+
+

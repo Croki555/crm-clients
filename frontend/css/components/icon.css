@@ -1,0 +1,97 @@
+.logo {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  background: var(--firm, #9873FF);
+}
+
+.logo__span {
+  color: var(--white, #FFF);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts {
+  max-width: 108px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16px, 1fr));
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.contacts__item {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltip {
+  pointer-events: none;
+  visibility: hidden;
+  z-index: -1;
+  position: relative;
+  max-width: 133px;
+  min-width: 133px;
+  padding: 7px 14px;
+  word-break: break-all;
+  top: -25px;
+  left: 0;
+  background: var(--black, #333);
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  min-height: 30px;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(137%);
+  bottom: -10px;
+  margin-left: -15px;
+  border: 4px solid transparent;
+  border-top: 8px solid var(--black, #333);
+}
+
+.contacts__link {
+  opacity: 0.7;
+  display: inline-flex;
+  align-items: self-end;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.contacts__link:hover {
+  opacity: 1;
+}
+
+.contacts__link:hover .tooltip {
+  visibility: visible;
+  z-index: 10;
+}
+
+.contacts__link.vk {
+  background-image: url("../../img/icons/vk.svg");
+}
+
+.contacts__link.facebook {
+  background-image: url("../../img/icons/fb.svg");
+}
+
+.contacts__link.phone {
+  background-image: url("../../img/icons/phone.svg");
+}
+
+.contacts__link.mail {
+  background-image: url("../../img/icons/mail.svg");
+}

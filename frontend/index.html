@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Система управления клиентами</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a class="logo" href="#">
+        <span class="logo__span">skb.</span> 
+      </a>
+      <form class="header__form" novalidate>
+        <input class="input-search" type="search" placeholder="Введите запрос">
+      </form>
+    </div>
+  </header>
+  <main>
+    <section class="clients">
+      <div class="container">
+        <h2 class="clients__title">Клиенты</h2>
+        <div class="table">
+          <div class="thead">
+            <div class="row">
+              <div class="cell">
+                <span class="cell__title active">
+                  ID <i class="cell__icon"></i>
+                </span>
+              </div>
+              <div class="cell">
+                <span class="cell__title">
+                  Фамилия Имя Отчество <i class="cell__icon"></i>
+                </span>
+              </div>
+              <div class="cell">
+                <span class="cell__title">
+                  Дата и время создания <i class="cell__icon"></i>
+                </span>
+              </div>
+              <div class="cell">
+                <span class="cell__title">
+                  Последние изменения <i class="cell__icon"></i>
+                </span>
+              </div>
+              <div class="cell">
+                <span class="cell__title">
+                  Контакты <i class="cell__icon"></i>
+                </span>
+              </div>
+              <div class="cell">
+                <span class="cell__title">
+                  Действия <i class="cell__icon"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="tbody">
+            <div class="row">
+              <div class="cell">
+                <span class="cell__value">123455</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">Скворцов Денис Юрьевич</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">21.02.2021 <span class="text-grey">12:41</span></span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">21.02.2021 <span class="text-grey">14:50</span></span>
+              </div>
+              <div class="cell">
+                <ul class="contacts">
+                  <li class="contacts__item">
+                    <a class="contacts__link vk" href="https://vk.com/croki555">
+                      <span class="tooltip">https://vk.com/croki555</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link facebook" href="#">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link phone" href="#">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link mail" href="tel:+79854430000">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cell">
+                  <button class="button-action edit">
+                    <span class="button-action__icon"></span>
+                    <span class="button-action__text">Изменить</span>
+                  </button>
+                  <button class="button-action delete">
+                    <span class="button-action__icon"></span>
+                     <span class="button-action__text">Удалить</span>
+                  </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                <span class="cell__value">123456</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">Куприянов Арсений Валерьевич</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">28.01.2021 <span class="text-grey">16:40</span></span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">02.02.2021 <span class="text-grey">17:01</span></span>
+              </div>
+              <div class="cell">
+                <ul class="contacts">
+                  <li class="contacts__item">
+                    <a class="contacts__link phone" href="tel:+79854430000">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link mail" href="tel:+79854430000">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cell">
+                  <button class="button-action edit">
+                    <span class="button-action__icon"></span>
+                    <span class="button-action__text">Изменить</span>
+                  </button>
+                  <button class="button-action delete">
+                    <span class="button-action__icon"></span>
+                     <span class="button-action__text">Удалить</span>
+                  </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                <span class="cell__value">123457</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">Константинопольская Людмила Александровна</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">20.01.2021 <span class="text-grey">14:01</span></span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">21.01.2021 <span class="text-grey">14:59</span></span>
+              </div>
+              <div class="cell">
+                <ul class="contacts">
+                  <li class="contacts__item">
+                    <a class="contacts__link facebook" href="#">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link phone" href="#">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link mail" href="tel:+79854430000">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cell">
+                  <button class="button-action edit">
+                    <span class="button-action__icon"></span>
+                    <span class="button-action__text">Изменить</span>
+                  </button>
+                  <button class="button-action delete">
+                    <span class="button-action__icon"></span>
+                     <span class="button-action__text">Удалить</span>
+                  </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                <span class="cell__value">123458</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">Дмитриевский Олег Алексеевич</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">14.01.2021 <span class="text-grey">16:50</span></span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">18.01.2021 <span class="text-grey">16:55</span></span>
+              </div>
+              <div class="cell">
+                <ul class="contacts">
+                  <li class="contacts__item">
+                    <a class="contacts__link phone" href="#">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cell">
+                  <button class="button-action edit">
+                    <span class="button-action__icon"></span>
+                    <span class="button-action__text">Изменить</span>
+                  </button>
+                  <button class="button-action delete">
+                    <span class="button-action__icon"></span>
+                     <span class="button-action__text">Удалить</span>
+                  </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                <span class="cell__value">123459</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">Александрова Татьяна Павловна</span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">11.01.2021 <span class="text-grey">12:45</span></span>
+              </div>
+              <div class="cell">
+                <span class="cell__value">11.01.2021 <span class="text-grey">14:11</span></span>
+              </div>
+              <div class="cell">
+                <ul class="contacts">
+                  <li class="contacts__item">
+                    <a class="contacts__link vk" href="https://vk.com/croki555">
+                      <span class="tooltip">https://vk.com/croki555</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link phone" href="#">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link mail" href="tel:+79854430000">
+                      <span class="tooltip">+7 (985) 443-00-00</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cell">
+                  <button class="button-action edit">
+                    <span class="button-action__icon"></span>
+                    <span class="button-action__text">Изменить</span>
+                  </button>
+                  <button class="button-action delete">
+                    <span class="button-action__icon"></span>
+                    <span class="button-action__text">Удалить</span>
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="add-button" onclick="showModal('#modalAddClient')">
+            <span class="add-button__icon"></span>
+            Добавить клиента
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="loader" style="display: inline-flex;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+        <path d="M1.00008 6.04008C1.00008 8.82356 3.2566 11.0801 6.04008 11.0801C8.82356 11.0801 11.0801 8.82356 11.0801 6.04008C11.0801 3.2566 8.82356 1.00008 6.04008 1.00008C5.38922 1.00008 4.7672 1.12342 4.196 1.34812" stroke="#9873FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div id="modalAddClient">
+      <div class="modal">
+        <form class="modal__form" novalidate>
+          <div class="modal__container">
+            <h2 class="modal__title">Новый клиент</h2>
+            <div class="input-group">
+              <input class="input" type="text" name="lastName">
+              <span class="input-placeholder">Фамилия</span>
+            </div>
+            <div class="input-group">
+              <input class="input" type="text" name="name">
+              <span class="input-placeholder">Имя</span>
+            </div>
+            <div class="input-group">
+              <input class="input" type="text" name="surname">
+              <span class="input-placeholder">Отчество</span>
+            </div>
+          </div>
+        </form>
+        <div class="modal__add-contact">
+          <ul class="modal__list"></ul>
+          <button class="add-client">Добавить контакт</button>
+        </div>
+        <div class="modal__group">
+          <button type="submit" class="btn btn-primary">Сохранить</button>
+          <span class="btn-close-modal">Отмена</span>
+        </div>
+        <button class="btn-close-modal"></button>
+      </div>
+    </div>
+  </main>
+  <script src="./js/components/index.js"></script>
+
+  <script src="./js/components/function.js"></script>
+  <script src="./js/components/modal.js"></script>
+  
+  <script src="./js/components/tooltip.js"></script>
+  <script src="./js/components/input.js"></script>
+  <script src="./js/components/select.js"></script>
+</body>
+</html>

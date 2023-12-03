@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  --red: #F06A4D;
+  --firm: #9873FF;
+  --white: #FFF;
+  --black: #333;
+  --grey: #C8C5D1;
+  --txt_grey: #B0B0B0;
+}
+
+* {
+  font-family: 'Open Sans', serif;
+  font-weight: 400;
+}
+
+body {
+  background: #F5F5F5;
+  cursor: url("../img/icons/hand.png");
+}
+
+.container {
+  max-width: 1186px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+
